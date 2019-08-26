@@ -4,10 +4,10 @@
     "\\src",
     "\\src\\css",
     "\\src\\css\\fonts",
-    "\\src\\css\\images",
     "\\src\\js",
+    "\\src\\js\\viewModels",
     "\\src\\js\\views"
   ],
-  "SelectedNode": "\\src\\css\\app.css",
+  "SelectedNode": "\\src\\js\\appController.js",
   "PreviewInSolutionExplorer": false
 }
