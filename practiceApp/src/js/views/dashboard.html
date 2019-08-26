@@ -1,56 +1,89 @@
-<!--
- Copyright (c) 2014, 2019, Oracle and/or its affiliates.
- The Universal Permissive License (UPL), Version 1.0
- -->
+<!DOCTYPE html>
 
-<div class="hero-image">
-    <div class="hero-text">
-        <h2>Oracle Class of</h2>
-        <h1>Tech Consulting</h1>
+<html lang="en-us">
+<head>
+    <title>Oracle JET Starter Template - Web Basic</title>
 
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+    <link rel="icon" href="css/images/favicon.ico" type="image/x-icon" />
 
-</div>
-<div role="main" class="oj-web-applayout-max-width oj-web-applayout-content">
+    <!-- This is the main css file for the default Alta theme -->
+    <!-- injector:theme -->
+    <link rel="stylesheet" href="css/libs/oj/v7.1.0/alta/oj-alta-min.css" type="text/css" />
+    <!-- endinjector -->
+    <!-- This contains icon fonts used by the starter template -->
+    <link rel="stylesheet" href="css/demo-alta-site-min.css" type="text/css" />
 
+    <!-- This is where you would add any app specific styling -->
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
 
+</head>
+<body class="oj-web-applayout-body">
+    <div id="globalBody" class="oj-web-applayout-page">
+    
+        <div class="hero-image">
+            <div class="hero-text">
+                <h2>Oracle Class of</h2>
+                <h1>Tech Consulting</h1>
 
-    <div class="oj-hybrid-padding">
+            </div>
 
+        </div>
+        <div role="main" class="oj-web-applayout-max-width oj-web-applayout-content">
+            <div class="oj-hybrid-padding">
+                <div id="container oj-sm-flex-items-1">
+                    <div class="demo-flex-display oj-flex-items-pad">
+                        <div class="oj-flex">
+                            <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
+                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">What is tech consulting?</h3>
+                                <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
+                                    <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'"> The Class Of Technology Consulting program helps recent college graduates quickly design, develop, and deliver Oracle technology solutions in Oracle Cloud. </div>
+                                </div>
+                            </div>
+                            <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
+                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">Meet the team</h3>
+                                <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
 
-
-
-
-        <div id="container oj-sm-flex-items-1">
-            <div class="demo-flex-display oj-flex-items-pad">
-                <div class="oj-flex">
-                    <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                        <h3 style="font-family: 'Avenir LT Std 65 Medium'">What is tech consulting?</h3>
-                        <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
-                            <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'"> The Class Of Technology Consulting program helps recent college graduates quickly design, develop, and deliver Oracle technology solutions in Oracle Cloud. </div>
-                        </div>
-                    </div>
-                    <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                        <h3 style="font-family: 'Avenir LT Std 65 Medium'">Meet the team</h3>
-                        <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
-
-                            <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'">Oracle Tech Consulting is made up of seven unique teams that specialize in different Oracle products. Find out what our teams are up to!</div>
-                            <a href="team.html">view more</a>
-                        </div>
-                    </div>
-                    <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                        <h3 style="font-family: 'Avenir LT Std 65 Medium'">The interview process</h3>
-                        <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
-                            <div style="font-size:16px; font-family: 'Avenir LT Std 35 Light' ">Apply to Oracle Class of Tech Consulting and find out what to expect from the interiew process.</div>
+                                    <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'">Oracle Tech Consulting is made up of seven unique teams that specialize in different Oracle products. Find out what our teams are up to!</div>
+                                    <a href="team.html">view more</a>
+                                </div>
+                            </div>
+                            <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
+                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">The interview process</h3>
+                                <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
+                                    <div style="font-size:16px; font-family: 'Avenir LT Std 35 Light' ">Apply to Oracle Class of Tech Consulting and find out what to expect from the interiew process.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="oj-flex oj-flex-init oj-panel oj-panel-alt1">
+                    <h2>video</h2>
+                </div>
+
+
             </div>
+            <footer class="oj-web-applayout-footer" role="contentinfo">
+                <div class="oj-web-applayout-footer-item oj-web-applayout-max-width">
+                    <ul>
+                        <oj-bind-for-each data="[[footerLinks]]">
+                            <template>
+                                <li><a :id="[[$current.data.linkId]]" :href="[[$current.data.linkTarget]]"><oj-bind-text value="[[$current.data.name]]"></oj-bind-text></a></li>
+                            </template>
+                        </oj-bind-for-each>
+                    </ul>
+                </div>
+                <div class="oj-web-applayout-footer-item oj-web-applayout-max-width oj-text-secondary-color oj-text-sm">
+                    Copyright © 2014, 2019 Oracle and/or its affiliates All rights reserved.
+                </div>
+            </footer>
         </div>
 
-        <div class="oj-flex oj-flex-init oj-panel oj-panel-alt1">
-            <h2>video</h2>
-        </div>
+        <script type="text/javascript" src="js/libs/require/require.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
+</body>
 
-    </div>
+</html>
