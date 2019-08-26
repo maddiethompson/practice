@@ -18,7 +18,9 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
       var smQuery = ResponsiveUtils.getFrameworkQuery(ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY);
       self.smScreen = ResponsiveKnockoutUtils.createMediaQueryObservable(smQuery);
       var mdQuery = ResponsiveUtils.getFrameworkQuery(ResponsiveUtils.FRAMEWORK_QUERY_KEY.MD_UP);
-      self.mdScreen = ResponsiveKnockoutUtils.createMediaQueryObservable(mdQuery);
+         self.mdScreen = ResponsiveKnockoutUtils.createMediaQueryObservable(mdQuery);
+         var lgQuery = ResponsiveUtils.getFrameworkQuery(ResponsiveUtils.FRAMEWORK_QUERY_KEY.LG_UP);
+         self.lgScreen = ResponsiveKnockoutUtils.createMediaQueryObservable(lgQuery);
 
        // Router setup
        self.router = Router.rootInstance;
