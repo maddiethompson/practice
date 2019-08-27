@@ -6,7 +6,7 @@
 /*
  * Your incidents ViewModel code goes here
  */
-define([],
+define(['ojs/ojcollapsible'],
  function() {
 
     function IncidentsViewModel() {
