@@ -142,6 +142,30 @@ h2 {
     color: white;
 }
 
+/* What is tech consulting image */
+.hero-image2 {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/keyboard.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-text2 h1 {
+    text-align: center;
+    position: absolute;
+    font-size: 5em;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 400;
+}
+
 .demo-mypanel {
     margin: 30px 20px 30px 20px;
     height: 225px;
