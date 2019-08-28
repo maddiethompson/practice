@@ -21,7 +21,7 @@
 </head>
 <body class="oj-web-applayout-body">
     <div id="globalBody" class="oj-web-applayout-page">
-    
+
         <div class="hero-image">
             <div class="hero-text">
                 <h2>Oracle Class of</h2>
@@ -30,55 +30,80 @@
             </div>
 
         </div>
+
+
+        <div class="oj-flex">
+            <div class="whatis">
+                <oj-flex-item>
+                    <div class="whatis-text">
+                        <h2 style="font-family:'Avenir LT Std 95 Black';font-size:36px;">Why Class Of?</h2>
+                        <h4 style="font-size:20px;">
+                            Oracle's Class Of program offers recent college graduates the unqiue experience of
+                            Oracle's Class Of program offers recent college graduates the unqiue experience of
+                            Oracle's Class Of program offers recent college graduates the unqiue experience of
+                        </h4>
+                        <button class="btn" style="margin-top:8px"><span>Apply now </span></button>
+                    </div>
+                </oj-flex-item>
+                <oj-flex-item>
+                    <div class="whatis-img">
+                        <img style="width:640px;height:450px;" src="css/images/people_computer.png" />
+                    </div>
+                </oj-flex-item>
+            </div>
+        </div>
+
         <div role="main" class="oj-web-applayout-max-width oj-web-applayout-content">
             <div class="oj-hybrid-padding">
                 <div id="container oj-sm-flex-items-1">
                     <div class="demo-flex-display oj-flex-items-pad">
                         <div class="oj-flex">
                             <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">What is tech consulting?</h3>
+                                <img src="css/images/cloud2.png" class="icon1" />
+                                <h3 style="font-family: 'Avenir LT Std 95 Black'">What is tech consulting?</h3>
                                 <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
-                                    <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'"> The Class Of Technology Consulting program helps recent college graduates quickly design, develop, and deliver Oracle technology solutions in Oracle Cloud. </div>
+                                    <div style="font-size:16px;font-family: 'Avenir LT Std 65 Medium';  line-height:24px;"> Oracle's Class Of Technology Consulting program helps recent college graduates quickly design, develop, and deliver Oracle technology solutions in Oracle Cloud. </div>
+                                    <div class="btn_div">
+                                        <button class="btn btn1"><span>Learn more </span></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">Meet the team</h3>
+                                <img src="css/images/team_icon.png" class="icon2" />
+
+                                <h3 style="font-family: 'Avenir LT Std 95 Black'">Meet the team</h3>
                                 <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
 
-                                    <div style="font-size:16px;font-family: 'Avenir LT Std 35 Light'">Oracle Tech Consulting is made up of seven unique teams that specialize in different Oracle products. Find out what our teams are up to!</div>
-                                    <button class="btn">Read more</button>
+                                    <div style="font-size:16px;font-family: 'Avenir LT Std 65 Medium';  line-height:24px;">Oracle Tech Consulting is made up of seven unique teams that specialize in different Oracle products. Find out what our teams are up to!</div>
+                                    <div class="btn_div">
+                                        <button class="btn btn2"><span>Learn more </span></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="oj-flex-item oj-sm-flex-1 oj-panel demo-mypanel">
-                                <h3 style="font-family: 'Avenir LT Std 65 Medium'">The interview process</h3>
+                                <img src="css/images/interview.png" class="icon3" />
+                                <h3 style="font-family:'Avenir LT Std 95 Black'">The recruitment process</h3>
                                 <div class="oj-flex-item oj-sm-flex-1 mypanel-text">
-                                    <div style="font-size:16px; font-family: 'Avenir LT Std 35 Light' ">Apply to Oracle Class of Tech Consulting and find out what to expect from the interiew process.</div>
+                                    <div style="font-size:16px; font-family: 'Avenir LT Std 65 Medium'; line-height:24px;">Apply to Oracle Class of Tech Consulting and find out what to expect from the interiew process. Learn some tips and tricks to nailing the interview.</div>
+                                    <div class="btn_div">
+                                        <button class="btn btn3"><span>Learn more </span></button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            
+
                 <div class="oj-flex oj-flex-init oj-panel oj-panel-alt1">
-                    <h2>video or rotating images</h2>
+                    <h2>video interns made</h2>
                 </div>
 
 
             </div>
-            <footer class="oj-web-applayout-footer" role="contentinfo">
-                <div class="oj-web-applayout-footer-item oj-web-applayout-max-width">
-                    <ul>
-                        <oj-bind-for-each data="[[footerLinks]]">
-                            <template>
-                                <li><a :id="[[$current.data.linkId]]" :href="[[$current.data.linkTarget]]"><oj-bind-text value="[[$current.data.name]]"></oj-bind-text></a></li>
-                            </template>
-                        </oj-bind-for-each>
-                    </ul>
-                </div>
-                <div class="oj-web-applayout-footer-item oj-web-applayout-max-width oj-text-secondary-color oj-text-sm">
-                    Copyright � 2014, 2019 Oracle and/or its affiliates All rights reserved.
-                </div>
-            </footer>
+
         </div>
 
         <script type="text/javascript" src="js/libs/require/require.js"></script>
