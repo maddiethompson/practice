@@ -6,8 +6,8 @@
 /*
  * Your incidents ViewModel code goes here
  */
-define(['ojs/ojcollapsible'],
- function() {
+define(['ojs/ojcollapsible', 'ojs/ojaccordion'],
+    function (ko, Bootstrap) {
 
     function IncidentsViewModel() {
       var self = this;
