@@ -190,12 +190,77 @@ h2 {
     text-align: center;
     position: absolute;
     font-size: 6vw;
-    top: 20%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-weight: 400;
 }
+
+.hero-text2 h5 {
+    text-align: center;
+    position: absolute;
+    font-size: 5vw;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Avenir LT Std 35 Light';
+}
+
+
+
+li {
+    margin: 5px 0 5px 0;
+}
+
+.demo-panel-customizations {
+    width: 350px;
+    height: 550px;
+    padding: 15px;
+    text-align: center;
+}
+
+.demo-panel-customizations:hover {
+    box-shadow: 0 8px 8px rgba(0,0,0,0.35), 0 8px 8px rgba(0,0,0,0.15);
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.teams-bio {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+}
+
+.teams-text {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.oj-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn4 {
+    margin-top: 53px;
+}
+
+
 
 /*Meet the team header*/
 .hero-text3 h1 {
@@ -294,7 +359,7 @@ a {
 
 .btn_div {
     display:flex;
-    justify-content:center;
+    align-items: flex-end;
 }
 .btn span {
     cursor: pointer;

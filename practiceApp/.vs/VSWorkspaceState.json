@@ -3,11 +3,10 @@
     "",
     "\\src",
     "\\src\\css",
-    "\\src\\css\\images",
     "\\src\\js",
     "\\src\\js\\viewModels",
     "\\src\\js\\views"
   ],
-  "SelectedNode": "\\src\\js\\viewModels\\incidents.js",
+  "SelectedNode": "\\src\\js\\views\\dashboard.html",
   "PreviewInSolutionExplorer": false
 }
