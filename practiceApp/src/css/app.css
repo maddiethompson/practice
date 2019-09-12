@@ -290,13 +290,14 @@ ul {
 li {
     margin: 5px 0 15px 0;
 }
-
+/*
 .border-bottom {
     border-bottom: 10px solid transparent;
     border-image: url('images/illustrations/Redwood_Backgrounds_Abstracts_RGB_03.png') 50 round;
     width: 98%;
     margin-left: 25px;
 }
+    */
 
 .border-top {
     border-bottom: 10px solid transparent;
@@ -305,6 +306,15 @@ li {
     margin-left: 25px;
 }
 
+.whatis {
+    background-image: url('images/textures/graphic/96dpi_texture_graphic_1_a.png');
+    background-size: contain;
+    border-radius: 50px;
+    box-shadow: 0 5px 13px 10px rgba(0, 0, 0, 0.2);
+    border: 10px solid transparent;
+    border-image: url('images/illustrations/Redwood_Backgrounds_Abstracts_RGB_02.png') 150 round;
+    border-bottom-left-radius: 50px;
+}
 
 
 .demo-panel-customizations {
@@ -312,11 +322,14 @@ li {
     height: 550px;
     padding: 15px;
     text-align: center;
-    background-image: url('images/textures/natural/96dpi_texture_natural_8_e.png');
+    background-image: url('images/textures/graphic/96dpi_texture_graphic_2_h.png');
+    background-size: contain;
+    border: 10px solid transparent;
+    border-image: url('images/illustrations/Redwood_Backgrounds_Abstracts_RGB_02.png') 50 round;
 }
 
     .demo-panel-customizations:hover {
-        box-shadow: 0 8px 8px rgba(0,0,0,0.35), 0 8px 8px rgba(0,0,0,0.15);
+        box-shadow: 0 6px 6px #56504B, 0 8px 8px rgba(0,0,0,0.15);
     }
 
 .teams {
@@ -334,9 +347,19 @@ li {
     align-items: center;
 }
 
+.teams h2 {
+    color: #312D2A;
+    font-family: 'Oracle Sans Bold';
+}
+
 .teams-text {
     text-align: center;
     line-height: 1.5;
+    color: #312D2A;
+}
+
+.teams .btn_div  {
+    font-size: 10px;
 }
 
 .oj-flex {
@@ -349,10 +372,17 @@ li {
     height: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
+    opacity: 0.8;
 }
 
 .btn4 {
     margin-top: 53px;
+}
+
+.demo-main-content {
+    background-color: #fafafa;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 /*Meet the team header*/
